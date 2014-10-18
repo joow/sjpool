@@ -1,1 +1,12 @@
 apply plugin: 'java'
+apply plugin: 'idea'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'com.zaxxer:HikariCP-java6:2.1.0'
+    testCompile 'com.h2database:h2:1.4.182'
+    testCompile 'org.slf4j:slf4j-nop:1.7.5'
+}

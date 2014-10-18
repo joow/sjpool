@@ -3,7 +3,10 @@ package org.sjpool;
 import java.util.concurrent.Callable;
 
 public class TestRunnable implements Callable<Integer> {
-    public TestRunnable(TestDAO testDAO) {
+    private final TestDAO testDAO;
+
+    TestRunnable(TestDAO testDAO) {
+        this.testDAO = testDAO;
     }
 
     @Override

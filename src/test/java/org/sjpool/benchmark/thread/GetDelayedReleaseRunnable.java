@@ -1,6 +1,6 @@
 package org.sjpool.benchmark.thread;
 
-import org.sjpool.benchmark.pool.Pool;
+import org.sjpool.pool.Pool;
 
 import java.sql.Connection;
 import java.sql.SQLException;
